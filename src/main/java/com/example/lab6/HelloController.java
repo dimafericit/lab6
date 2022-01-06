@@ -121,7 +121,11 @@ public class HelloController {
 
     public void backToMain(ActionEvent event) throws IOException {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.close();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 640, 480);
+        stage.setTitle("University App");
+        stage.setScene(scene);
+        stage.show();
     }
 
 }
