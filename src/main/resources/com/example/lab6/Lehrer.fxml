@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab6.HelloController">
+   <children>
+      <Label layoutX="224.0" layoutY="27.0" text="Teacher Menu">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="teacherbutton1" layoutX="193.0" layoutY="174.0" mnemonicParsing="false" onAction="#showCourses" text="Show Student enrolled for the course" />
+      <TextField fx:id="teacherTextbox" layoutX="225.0" layoutY="138.0" />
+      <Label layoutX="225.0" layoutY="120.0" text="Course Id" />
+      <Label fx:id="studentsLabel" layoutX="50.0" layoutY="216.0" prefHeight="146.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>
